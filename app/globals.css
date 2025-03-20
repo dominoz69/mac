@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 17, 24, 39;
+  --background-end-rgb: 17, 24, 39;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+/* Custom styles for code editor */
+[contenteditable] {
+  caret-color: white;
+  outline: none;
+}
+
+[contenteditable]:focus {
+  outline: none;
+}
+
+/* VS Code Dark+ theme colors */
+.token.comment {
+  color: #6a9955;
+}
+
+.token.string {
+  color: #ce9178;
+}
+
+.token.keyword {
+  color: #569cd6;
+}
+
+.token.boolean,
+.token.number {
+  color: #b5cea8;
+}
+
+.token.builtin {
+  color: #4ec9b0;
+}
+
+.token.function {
+  color: #dcdcaa;
+}
+
+.token.tag {
+  color: #569cd6;
+}
+
+.token.attr-name {
+  color: #9cdcfe;
+}
+
+.token.property {
+  color: #9cdcfe;
+}
+
+.token.selector-class {
+  color: #d7ba7d;
+}
+
+.token.selector-id {
+  color: #d7ba7d;
+}
+
+.token.operator {
+  color: #d4d4d4;
+}
+
+.token.variable {
+  color: #9cdcfe;
+}
+
+.token.namespace {
+  color: #4ec9b0;
+}
+
+.token.generic {
+  color: #4ec9b0;
+}
+
+.token.heading {
+  color: #569cd6;
+  font-weight: bold;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.codeblock,
+.token.inline-code {
+  color: #d4d4d4;
+  background-color: #1e1e1e;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.token.blockquote {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.token.list-item,
+.token.ordered-list-item {
+  color: #d4d4d4;
+}
+
+.token.link,
+.token.image {
+  color: #569cd6;
+  text-decoration: underline;
+}
+
+.token.anchor,
+.token.alias {
+  color: #dcdcaa;
+}
+
